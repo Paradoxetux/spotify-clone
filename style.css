@@ -1,0 +1,18 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    169deg,
+    rgba(60, 14, 8, 1) 0%,
+    rgba(14, 14, 15, 1) 46%
+  );
+}

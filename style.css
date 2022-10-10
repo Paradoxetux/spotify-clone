@@ -16,6 +16,7 @@ body {
     rgba(60, 14, 8, 1) 0%,
     rgba(14, 14, 15, 1) 46%
   );
+  overflow-x: hidden;
 }
 
 header {
@@ -72,14 +73,16 @@ h1 {
 .large-boxes {
   display: flex;
   padding-top: 10px;
+  overflow-x: scroll;
 }
 
 .large-boxes__box {
   display: flex;
   flex-direction: column;
   color: var(--white-90);
-  width: 80px;
+  width: 100px;
   font-size: 0.7em;
+  margin-right: 10px;
 }
 
 .large-boxes__box--title {
@@ -87,5 +90,75 @@ h1 {
 }
 
 .large-boxes__box img {
-  width: 80px;
+  width: 100px;
+  height: 100px;
+  border: 8px;
+}
+
+footer {
+  background: rgb(26, 25, 25);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.duration {
+  width: 80vw;
+  height: 2px;
+  background: var(--white-90);
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+  padding: 0 10px;
+  color: var(--white-90);
+}
+
+.artist {
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.song-info .title {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+}
+
+.bar img {
+  width: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.57);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item.active {
+  color: #fff;
+}
+
+.menu-item i {
+  display: inline-block;
+  margin: 5px;
+  font-size: 1rem;
 }
